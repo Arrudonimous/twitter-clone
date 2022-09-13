@@ -1,5 +1,5 @@
-import styled from 'styled-components/native';
-import { StyleSheet } from 'react-native';
+import styled from "styled-components/native";
+import { StyleSheet } from "react-native";
 
 export const Container = styled.View`
   background-color: black;
@@ -10,10 +10,10 @@ export const Container = styled.View`
   justify-content: space-between;
   padding: 0 20px;
   border-bottom-width: ${StyleSheet.hairlineWidth * 2}px;
-  border-bottom-color: #1e1e1e;
+  border-bottom-color: #232628;
 `;
 
-export const Item = styled.Image.attrs({ resizeMode: 'contain' })`
+export const Item = styled.Image.attrs({ resizeMode: "contain" })`
   width: 25px;
   height: 25px;
 `;

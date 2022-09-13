@@ -9,7 +9,3 @@ export const Teste = styled.Text`
   color: red;
   font-size: 20px;
 `;
-
-export const Scroll = styled.ScrollView`
-  background-color: black;
-`;
