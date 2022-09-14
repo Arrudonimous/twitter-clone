@@ -24,7 +24,26 @@ export const Home = () => {
       <Container>
         <Header />
         <Scroll>
-          <PostContainer></PostContainer>
+          <PostContainer
+            photo="https://pbs.twimg.com/profile_images/1533805208219881474/TQ4AaUXz_400x400.jpg"
+            name="malu"
+            username="maalufdias"
+            time="1d"
+            content="amo meu namorado"
+            comments={13305}
+            retweets={150000}
+            likes={18000}
+          ></PostContainer>
+          <PostContainer
+            photo="https://pbs.twimg.com/profile_images/1555014292562403335/ryAd1IE-_400x400.jpg"
+            name="𝔸𝕣𝕣𝕦𝕕𝕒"
+            username="Arrudonimous"
+            time="32s"
+            content="Amo minha namorada"
+            comments={12001}
+            retweets={12001}
+            likes={1123123123}
+          ></PostContainer>
         </Scroll>
       </Container>
     </>
