@@ -21,31 +21,49 @@ import { FontAwesome5, AntDesign, Ionicons } from "@expo/vector-icons";
 import { useEffect, useState } from "react";
 
 export const PostContainer = (props: any) => {
-  const [commentsAd, setCommentsAd]: any = useState("");
+  const [commentsAd, setCommentsAd]: any = useState<number>();
   const [comments, setComments]: any = useState(props.comments);
 
-  const [retweetsAd, setRetweetsAd]: any = useState("");
+  const [retweetsAd, setRetweetsAd]: any = useState<number>();
   const [retweets, setRetweets]: any = useState(props.retweets);
 
-  const [likesAd, setLikesAd]: any = useState("");
+  const [likesAd, setLikesAd]: any = useState<number>();
   const [likes, setLikes]: any = useState(props.likes);
 
   useEffect(() => {
     if (comments > 10000) {
-      setCommentsAd("K");
-      setComments(Math.floor(comments / 1000));
+      if (comments > 1000000) {
+        setCommentsAd("M");
+        setComments((comments / 1000000).toFixed(2));
+      }
+      if (comments > 10000 && comments < 1000000) {
+        setCommentsAd("K");
+        setComments(Math.floor(comments / 1000));
+      }
     }
 
     if (retweets > 10000) {
-      setRetweetsAd("K");
-      setRetweets();
+      if (retweets > 1000000) {
+        setRetweetsAd("M");
+        setRetweets((retweets / 1000000).toFixed(2));
+      }
+      if (retweets > 10000 && retweets < 1000000) {
+        setRetweetsAd("K");
+        setRetweets(Math.floor(comments / 1000));
+      }
     }
 
     if (likes > 10000) {
-      setLikesAd("K");
-      setLikes(Math.floor(likes / 1000));
+      if (likes > 1000000) {
+        setLikesAd("M");
+        setLikes((likes / 1000000).toFixed(2));
+      }
+      if (likes > 10000 && likes < 1000000) {
+        setLikesAd("K");
+        setLikes(Math.floor(likes / 1000));
+      }
     }
-  });
+  }, []);
 
   return (
     <Container>
@@ -74,7 +92,7 @@ export const PostContainer = (props: any) => {
           <RetweetsContainer>
             <AntDesign name="retweet" size={18} color="#555A64" />
             <RetweetsNumber>
-              {props.retweets}
+              {retweets}
               {retweetsAd}
             </RetweetsNumber>
           </RetweetsContainer>
