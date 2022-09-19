@@ -80,6 +80,28 @@ export const TimeStamp = styled.Text`
   font-weight: 400;
 `;
 
+export const ContentPhotoContainer = styled.View`
+  flex-direction: row;
+  width: 100%;
+  flex-grow: 1;
+  flex: none;
+  order: 0;
+  padding-top: 4px;
+`;
+
+export const ContentPhoto = styled.Image`
+  width: 100%;
+  border-radius: 10px;
+  height: 300px;
+`;
+
+export const PhotoModal = styled.Modal`
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
+
 export const Content = styled.Text`
   color: #cbd0d9;
   font-family: "Arial";
