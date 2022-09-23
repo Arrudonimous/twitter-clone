@@ -41,57 +41,57 @@ export const AppRoutes = () => {
               ),
           }}
         />
-        <Tab.Screen
-          component={Search}
-          name="Search"
-          options={{
-            tabBarIcon: ({ focused }: { focused: Boolean }) =>
-              focused ? (
-                <>
-                  <Icon color="white" size={24} name="search-sharp" />
-                </>
-              ) : (
-                <>
-                  <Icon color="white" size={24} name="search-outline" />
-                </>
-              ),
-          }}
-        />
-        <Tab.Screen
-          component={Home}
-          name="Notifications"
-          options={{
-            tabBarIcon: ({ focused }: { focused: Boolean }) =>
-              focused ? (
-                <>
-                  <Icon color="white" size={24} name="notifications-sharp" />
-                </>
-              ) : (
-                <>
-                  <Icon color="white" size={24} name="notifications-outline" />
-                </>
-              ),
-          }}
-        />
-        <Tab.Screen
-          component={Home}
-          name="Direct"
-          options={{
-            tabBarIcon: ({ focused }: { focused: Boolean }) =>
-              focused ? (
-                <>
-                  <Icon color="white" size={24} name="md-mail-open" />
-                </>
-              ) : (
-                <>
-                  <Icon color="white" size={24} name="ios-mail-outline" />
-                  {/* <HomeIcon width="10px" height="10px" /> */}
-                </>
-              ),
-          }}
-        />
+        {/* <Tab.Screen */}
+        {/* component={Search} */}
+        {/* name="Search" */}
+        {/* options={{ */}
+        {/* tabBarIcon: ({ focused }: { focused: Boolean }) => */}
+        {/* focused ? ( */}
+        {/* <> */}
+        {/* <Icon color="white" size={24} name="search-sharp" /> */}
+        {/* </> */}
+        {/* ) : ( */}
+        {/* <> */}
+        {/* <Icon color="white" size={24} name="search-outline" /> */}
+        {/* </> */}
+        {/* ), */}
+        {/* }} */}
+        {/* /> */}
+        {/* <Tab.Screen */}
+        {/* component={Home} */}
+        {/* name="Notifications" */}
+        {/* options={{ */}
+        {/* tabBarIcon: ({ focused }: { focused: Boolean }) => */}
+        {/* focused ? ( */}
+        {/* <> */}
+        {/* <Icon color="white" size={24} name="notifications-sharp" /> */}
+        {/* </> */}
+        {/* ) : ( */}
+        {/* <> */}
+        {/* <Icon color="white" size={24} name="notifications-outline" /> */}
+        {/* </> */}
+        {/* ), */}
+        {/* }} */}
+        {/* /> */}
+        {/* <Tab.Screen */}
+        {/* component={Home} */}
+        {/* name="Direct" */}
+        {/* options={{ */}
+        {/* tabBarIcon: ({ focused }: { focused: Boolean }) => */}
+        {/* focused ? ( */}
+        {/* <> */}
+        {/* <Icon color="white" size={24} name="md-mail-open" /> */}
+        {/* </> */}
+        {/* ) : ( */}
+        {/* <> */}
+        {/* <Icon color="white" size={24} name="ios-mail-outline" /> */}
+        {/* <HomeIcon width="10px" height="10px" /> */}
+        {/* </> */}
+        {/* ), */}
+        {/* }} */}
+        {/* /> */}
       </Tab.Navigator>
-      <FloatButton />
+      {/* <FloatButton /> */}
     </>
   );
 };
