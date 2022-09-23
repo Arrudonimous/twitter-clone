@@ -24,6 +24,7 @@ import { useEffect, useState } from "react";
 
 export const PostContainer = (props: any) => {
   // const [photoModalVisible, setphotoModalVisible] = useState(false);
+  const [likes, setLikes] = useState(props.likes);
 
   function setAd(value: number) {
     if (value > 10000) {
@@ -67,7 +68,6 @@ export const PostContainer = (props: any) => {
           <Content>{props.content}</Content>
         </PostContent>
         {imageContent}
-
         <PostData>
           <CommentsContainer>
             <FontAwesome5 name="comment" size={18} color="#555A64" />
@@ -79,7 +79,7 @@ export const PostContainer = (props: any) => {
           </RetweetsContainer>
           <LikesContainer>
             <Ionicons name="heart-outline" size={18} color="#555A64" />
-            <LikesNumber>{setAd(props.likes)}</LikesNumber>
+            <LikesNumber>{setAd(likes)}</LikesNumber>
           </LikesContainer>
           <AntDesign name="sharealt" size={16} color="#555A64" />
         </PostData>
